@@ -1,0 +1,28 @@
+.header {
+  margin-top: 36px;
+  border: 2px solid greenyellow;
+}
+.headerTitles {
+  display: flex;
+  /* sắp xếp theo cột từ trên xuống */
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lora", serif;
+  color: #444;
+}
+.headerTitelRN {
+  position: absolute;
+  top: 18%;
+  font-size: 20px;
+}
+.headerTitelBlog {
+  position: absolute;
+  top: 20%;
+  font-size: 100px;
+}
+.headerImg {
+  width: 100%;
+  height: 450px;
+  margin-top: 96px;
+  object-fit: cover;
+}

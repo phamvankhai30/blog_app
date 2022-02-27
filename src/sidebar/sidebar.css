@@ -1,0 +1,40 @@
+.sidebar {
+  flex: 3;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  border: solid 1px red;
+}
+.sidebarItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebarTitle {
+  margin: 10px;
+  padding: 5px;
+  width: 80%;
+  text-align: center;
+  border-top: solid 2px #a7a4a7;
+  border-bottom: solid 2px #a7a4a7;
+  font-family: "Varela Round", sans-serif;
+  font-size: 15px;
+  color: #222;
+  font-weight: 600;
+  line-height: 20px;
+}
+/* chọn các phần tử con img có phần tử cha là sidebarItem */
+.sidebarItem > img {
+  margin-top: 10px;
+  width: 90%;
+  height: 90%;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5%;
+  /* thu hinh theo border */
+  object-fit: cover;
+}
+.sidebarItem > p {
+  margin-top: 5px;
+  padding: 15px;
+}

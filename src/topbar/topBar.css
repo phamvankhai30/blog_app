@@ -1,0 +1,59 @@
+.top {
+  width: 100%;
+  height: 55px;
+  background-color: white;
+  /* fixed topbar */
+  position: sticky;
+  top: 0px;
+
+  display: flex;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  border: 1px solid red;
+}
+
+.topLeft,
+.topRight {
+  flex: 3;
+  display: flex;
+  /* top CENTER buttom */
+  align-items: center;
+  /* left CENTER right */
+  justify-content: center;
+  border: 1px solid yellow;
+}
+.topCenter {
+  flex: 6;
+  display: flex;
+  align-items: center;
+  border: 1px solid yellow;
+}
+.topIcon {
+  margin-right: 15px;
+  font-size: 23px;
+  color: #444;
+  cursor: pointer;
+}
+.topList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.topListItem {
+  margin-right: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.topImg {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  /* thu hinh theo border */
+  object-fit: cover;
+}
+.searchItem {
+  font-size: 18px;
+  color: #666;
+  margin-left: 20px;
+  cursor: pointer;
+}
