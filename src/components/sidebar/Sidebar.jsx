@@ -29,7 +29,7 @@ export default function Sidebar() {
       {/* follow me */}
       <div className="sidebarItem">
         <span className="sidebarTitle">FOLLOW ME</span>
-        <div className="sidebarsocial">
+        <div className="sidebarSocial">
           <i className="sidebarIcon fa-brands fa-twitter-square"></i>
           <i className="sidebarIcon fa-brands fa-pinterest"></i>
           <i className="sidebarIcon fa-brands fa-facebook"></i>

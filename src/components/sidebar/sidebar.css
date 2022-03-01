@@ -1,10 +1,9 @@
 .sidebar {
   flex: 3;
-  margin-top: 20px;
+  margin: 13px 20px 20px 20px;
   padding-bottom: 30px;
   background-color: #fdfdfd;
   border-radius: 10px;
-  border: solid 1px red;
 }
 .sidebarItem {
   display: flex;
@@ -13,7 +12,7 @@
 }
 .sidebarTitle {
   margin: 10px;
-  padding: 5px;
+  padding: 7px;
   width: 80%;
   text-align: center;
   border-top: solid 2px #a7a4a7;
@@ -37,4 +36,26 @@
 .sidebarItem > p {
   margin-top: 5px;
   padding: 15px;
+}
+.sidebarList {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.sidebarListItem {
+  display: inline-block;
+  width: 50%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.sidebarSocial {
+  margin-top: 15px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebarIcon {
+  font-size: 26px;
+  margin-left: 20px;
+  cursor: pointer;
 }

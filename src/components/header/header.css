@@ -1,6 +1,5 @@
 .header {
-  margin-top: 36px;
-  border: 2px solid greenyellow;
+  margin-top: 30px;
 }
 .headerTitles {
   display: flex;
@@ -8,21 +7,21 @@
   flex-direction: column;
   align-items: center;
   font-family: "Lora", serif;
-  color: #444;
+  color: rgb(94, 90, 90);
 }
 .headerTitelRN {
   position: absolute;
-  top: 18%;
+  top: 13%;
   font-size: 20px;
 }
 .headerTitelBlog {
   position: absolute;
-  top: 20%;
+  top: 14%;
   font-size: 100px;
 }
 .headerImg {
   width: 100%;
   height: 450px;
-  margin-top: 96px;
+  margin-top: 72px;
   object-fit: cover;
 }

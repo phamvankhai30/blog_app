@@ -8,8 +8,8 @@ export default function Header() {
       </div>
       <img
         className="headerImg"
-        src="https://2sao.vietnamnetjsc.vn/images/2017/08/17/14/36/thac-nuoc-01.jpg"
-        alt="Thác nước"
+        src="https://photo-cms-plo.zadn.vn/Uploaded/2022/bpcbzqvp/2020_03_04/binh-minh-da-lat-dep-nap-long-1_kabt.jpg"
+        alt="Đà lạt"
       />
     </div>
   );
