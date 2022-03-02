@@ -1,0 +1,38 @@
+.setting {
+  display: flex;
+}
+.settingWrapper {
+  flex: 9;
+  padding: 20px;
+}
+.settingTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.settingUpdateTitel {
+  font-size: 30px;
+  color: rgb(207, 136, 148);
+}
+.settingDeleteTitel {
+  font-size: 16px;
+  color: rgb(255, 0, 43);
+  cursor: pointer;
+}
+.settingForm {
+  display: flex;
+  flex-direction: column;
+}
+.settingPP {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.settingPP > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+  object-fit: cover;
+}

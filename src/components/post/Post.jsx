@@ -16,7 +16,16 @@ export default function Post() {
         <hr />
         <span className="postDate">1 hour ago</span>
       </div>
-      <p className="postDesc">xin chào các cậu</p>
+      <p className="postDesc">
+        Với ảnh đẹp nó chứa đựng một vẻ đẹp riêng, chứa đựng những thông điệp
+        nhắn nhủ đến người xem. Khi ngắm nhìn chúng, bạn không thể tránh khỏi
+        cảm giác đắm say hòa chung chút bồi hồi, xao xuyến trước sức hút kì lạ
+        của những cảnh đẹp thiên nhiên, bao hoài niệm một thuở lần lượt ùa về
+        trong tâm hồn, khiến bạn chỉ muốn ngắm nhìn mãi không thôi. Hãy tải
+        nhanh những hình ảnh đẹp này để làm hình nền máy tính nhe bao hoài niệm
+        một thuở lần lượt ùa về trong tâm hồn, khiến bạn chỉ muốn ngắm nhìn mãi
+        không thôi
+      </p>
     </div>
   );
 }
