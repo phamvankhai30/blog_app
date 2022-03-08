@@ -1,5 +1,5 @@
 .post {
-  width: 420px;
+  width: 400px;
   margin: 0px 25px 40px 25px;
   display: flex;
   flex-direction: column;
@@ -58,4 +58,5 @@
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+  text-align: justify;
 }

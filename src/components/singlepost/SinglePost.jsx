@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./singlepost.css";
 
 export default function SinglePost() {
@@ -5,23 +6,27 @@ export default function SinglePost() {
     <div className="singlePost">
       <div className="singlePostWrapper">
         <img
-          src="https://hinhanhdephd.com/wp-content/uploads/2019/05/hinh-anh-dep-lam-hinh-nen-dep-43-696x435.jpg"
+          src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
           alt="Cảnh "
           className="singlePostImg"
         />
       </div>
 
       <h1 className="siglePostTitle">
-        Cảnh Thật Là Đẹp quá trời quá đất luôn
-        hahahahhhahahahahaahahahahahhahaha
+        Hôm nay trời thật đẹp ...
         <div className="singlePostEdit">
           <i className="singlePostItem fa-solid fa-pen-to-square"></i>
           <i className="singlePostItem fa-solid fa-trash-can"></i>
         </div>
       </h1>
       <div className="singlePostInfo">
-        <span className="singlePostAuthor">
-          Author: <b>Kapa</b>
+        <span>
+          Author:
+          <b className="singlePostAuthor">
+            <Link className="link" to="/posts?username=kapa">
+              KaPa
+            </Link>
+          </b>
         </span>
         <span className="singlePostDate"> 1 hour ago</span>
       </div>

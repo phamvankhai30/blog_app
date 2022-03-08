@@ -19,7 +19,12 @@ export default function Setting() {
             <label htmlFor="fileInput">
               <i className="settingPPIcon fa-solid fa-circle-user"></i>
             </label>
-            <input type="file" id="fileInput" style={{ display: "none" }} />
+            <input
+              type="file"
+              id="fileInput"
+              style={{ display: "none" }}
+              className="settingsPPInput"
+            />
           </div>
           <label>User Name</label>
           <input type="text" placeholder="KaPa" />

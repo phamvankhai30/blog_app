@@ -1,18 +1,28 @@
+import { Link } from "react-router-dom";
 import "./post.css";
-export default function Post() {
+export default function Post({ img }) {
   return (
+    // https://static1.ohman.vn/YanNews/20190718/4dd70df5-f540-4f8f-90f1-35063545a485.jpeg
     <div className="post">
-      <img
-        className="postImg"
-        src="https://static1.ohman.vn/YanNews/20190718/4dd70df5-f540-4f8f-90f1-35063545a485.jpeg"
-        alt="Cảnh đẹp"
-      />
+      <img className="postImg" src={img} alt="Cảnh đẹp" />
       <div className="postInfo">
         <div className="postCats">
-          <span className="postCat">Music</span>
-          <span className="postCat">Life</span>
+          <span className="postCat">
+            <Link className="link" to="/posts?cat=Music">
+              Music
+            </Link>
+          </span>
+          <span className="postCat">
+            <Link className="link" to="/posts?cat=Life">
+              Life
+            </Link>
+          </span>
         </div>
-        <span className="postTitle">Hôm nay trời thật là đẹp</span>
+        <span className="postTitle">
+          <Link to="/post/idp" className="link">
+            Hôm nay trời thật đẹp ...
+          </Link>
+        </span>
         <hr />
         <span className="postDate">1 hour ago</span>
       </div>

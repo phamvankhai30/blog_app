@@ -36,3 +36,45 @@
   border-radius: 15px;
   object-fit: cover;
 }
+.settingPPIcon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: lightcoral;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.settingForm > label {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.settingForm > input {
+  color: gray;
+  margin: 10px 0;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+}
+.settingSubmit {
+  width: 150px;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+.settingsPPInput {
+  width: 30%;
+}
+.settingSubmit:hover {
+  background-color: rgb(114, 1, 1);
+}
