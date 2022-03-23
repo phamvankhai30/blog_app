@@ -7,13 +7,13 @@ export default function Example3() {
     <div>
       <ul>
         <li>
-          <Link to="/homeex3">Home Ex3</Link>
+          <Link to="/ex31">Home Ex3</Link>
         </li>
         <li>
-          <Link to="/productex3">Product Ex3</Link>
+          <Link to="/ex32">Product Ex3</Link>
         </li>
         <li>
-          <Link to="/blogex3">Blog Ex3</Link>
+          <Link to="/ex33">Blog Ex3</Link>
         </li>
       </ul>
     </div>
