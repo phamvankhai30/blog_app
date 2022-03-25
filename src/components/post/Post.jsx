@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 import "./post.css";
-export default function Post({ img }) {
+export default function Post({ post }) {
   return (
     // https://static1.ohman.vn/YanNews/20190718/4dd70df5-f540-4f8f-90f1-35063545a485.jpeg
     <div className="post">
-      <img className="postImg" src={img} alt="Cảnh đẹp" />
+      <img
+        className="postImg"
+        src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        alt="Cảnh đẹp"
+      />
       <div className="postInfo">
         <div className="postCats">
           <span className="postCat">
@@ -18,11 +22,7 @@ export default function Post({ img }) {
             </Link>
           </span>
         </div>
-        <span className="postTitle">
-          <Link to="/post/idp" className="link">
-            Hôm nay trời thật đẹp ...
-          </Link>
-        </span>
+        <span className="postTitle">{post.title}</span>
         <hr />
         <span className="postDate">1 hour ago</span>
       </div>
