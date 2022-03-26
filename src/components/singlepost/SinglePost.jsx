@@ -1,19 +1,30 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import "./singlepost.css";
-
+import axios from "axios";
 export default function SinglePost() {
+  const location = useLocation();
+  const path = location.pathname.split("/")[2];
+  const [post, setPost] = useState({});
+
+  useEffect(() => {
+    const getPost = async () => {
+      const res = await axios.get("/posts/" + path);
+      setPost(res.data);
+    };
+    getPost();
+  }, [path]);
+
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
-        <img
-          src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-          alt="Cảnh "
-          className="singlePostImg"
-        />
+        {post.photo && (
+          <img src={post.photo} alt="Cảnh " className="singlePostImg" />
+        )}
       </div>
 
       <h1 className="siglePostTitle">
-        Hôm nay trời thật đẹp ...
+        {post.title}
         <div className="singlePostEdit">
           <i className="singlePostItem fa-solid fa-pen-to-square"></i>
           <i className="singlePostItem fa-solid fa-trash-can"></i>
@@ -23,32 +34,16 @@ export default function SinglePost() {
         <span>
           Author:
           <b className="singlePostAuthor">
-            <Link className="link" to="/posts?username=kapa">
-              KaPa
+            <Link className="link" to={`/?user=${post.username}`}>
+              {post.username}
             </Link>
           </b>
         </span>
-        <span className="singlePostDate"> 1 hour ago</span>
+        <span className="singlePostDate">
+          {new Date(post.createdAt).toDateString()}
+        </span>
       </div>
-      <p className="singlePostDesc">
-        Với ảnh đẹp nó chứa đựng một vẻ đẹp riêng, chứa đựng những thông điệp
-        nhắn nhủ đến người xem. Khi ngắm nhìn chúng, bạn không thể tránh khỏi
-        cảm giác đắm say hòa chung chút bồi hồi, xao xuyến trước sức hút kì lạ
-        của những cảnh đẹp thiên nhiên, bao hoài niệm một thuở lần lượt ùa về
-        trong tâm hồn, khiến bạn chỉ muốn ngắm nhìn mãi không thôi. Hãy tải
-        nhanh những hình ảnh đẹp này để làm hình nền máy tính nhe.xao xuyến
-        trước sức hút kì lạ của những cảnh đẹp thiên nhiên, bao hoài niệm một
-        thuở lần lượt ùa về trong tâm hồn, khiến bạn chỉ muốn ngắm nhìn mãi
-        không thôi.Với ảnh đẹp nó chứa đựng một vẻ đẹp riêng, chứa đựng những
-        thông điệp nhắn nhủ đến người xem. Khi ngắm nhìn chúng, bạn không thể
-        tránh khỏi cảm giác đắm say hòa chung chút bồi hồi, xao xuyến trước sức
-        hút kì lạ của những cảnh đẹp thiên nhiên, bao hoài niệm một thuở lần
-        lượt ùa về trong tâm hồn, khiến bạn chỉ muốn ngắm nhìn mãi không thôi.
-        Hãy tải nhanh những hình ảnh đẹp này để làm hình nền máy tính nhe.xao
-        xuyến trước sức hút kì lạ của những cảnh đẹp thiên nhiên, bao hoài niệm
-        một thuở lần lượt ùa về trong tâm hồn, khiến bạn chỉ muốn ngắm nhìn mãi
-        không thôi
-      </p>
+      <p className="singlePostDesc">{post.desc}</p>
     </div>
   );
 }
