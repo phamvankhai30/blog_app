@@ -52,3 +52,8 @@
   padding: 10px;
   border-radius: 8px;
 }
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}

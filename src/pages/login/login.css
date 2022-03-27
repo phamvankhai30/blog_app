@@ -32,6 +32,10 @@
   padding: 10px;
   border-radius: 8px;
 }
+.loginFromButton:disabled {
+  cursor: not-allowed;
+  border-color: red;
+}
 .loginFrom > label {
   margin: 10px 0;
 }

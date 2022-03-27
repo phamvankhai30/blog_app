@@ -6,6 +6,8 @@ import Login from "./pages/login/Login";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import Setting from "./pages/setting/Setting";
+import { useContext } from "react";
+import { Context } from "./context/Context";
 // import Example1 from "./Example/example1/Example1";
 // import Example2 from "./Example/example2/Example2";
 // import HomeEx3 from "./Example/example3/HomeEx3";
@@ -18,7 +20,7 @@ import Setting from "./pages/setting/Setting";
 // import Example7 from "./Example/example7/Example7";
 
 function App() {
-  const currentUser = true;
+  const { user } = useContext(Context);
 
   return (
     <>
@@ -29,22 +31,17 @@ function App() {
 
       <Routes>
         <Route exact path="/" element={<HomePage />} />
-        {/* <Route exact path="/posts" element={<HomePage />} /> */}
-        {/* <Route
-          path="/register"
-          element={currentUser ? <HomePage /> : <Register />}
-        /> */}
-        <Route path="/register" element={<Register />} />
-        {/* <Route path="/login" element={currentUser ? <HomePage /> : <Login />} /> */}
-        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={user ? <HomePage /> : <Register />} />
+        <Route path="/login" element={user ? <HomePage /> : <Login />} />
+        <Route path="/write" element={user ? <Write /> : <Register />} />
+        <Route path="/setting" element={user ? <Setting /> : <Login />} />
         <Route path="/post/:id" element={<Single />} />
 
+        {/* <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/post/:id" element={<Single />} />
         <Route path="/write" element={currentUser ? <Write /> : <Login />} />
-        {/* <Route
-          path="/setting"
-          element={currentUser ? <Setting /> : <Login />}
-        /> */}
-        <Route path="/setting" element={<Setting />} />
+        <Route path="/setting" element={<Setting />} /> */}
 
         {/*start Example */}
         {/* <Route path="/ex1" element={<Example1 />} />
