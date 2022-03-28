@@ -13,9 +13,10 @@ export default function Post({ post }) {
               {c.name}
             </span>
           ))} */}
-          
-					<span className='postCat'>Life</span>
 
+					<span className='postCat'>Life</span>
+					<span className='postCat'>Music</span>
+					
 					{/* <span className="postCat" style={{ color: "red" }}>
             {post.categories}
           </span> */}

@@ -69,6 +69,7 @@
   font-size: 15px;
   line-height: 40px;
   width: 0px;
+  max-width: 60%;
 }
 .searchItem {
   font-size: 18px;

@@ -1,6 +1,6 @@
 .post {
-	width: 385px;
-	padding: 0 20px;
+	width: 360px;
+	padding: 0 10px;
 	margin-bottom: 40px;
 	display: flex;
 	flex-direction: column;
@@ -9,7 +9,6 @@
 
 .postImg {
 	width: 100%;
-	max-width: 388px;
 	height: 280px;
 	object-fit: cover;
 	border-radius: 7px;
