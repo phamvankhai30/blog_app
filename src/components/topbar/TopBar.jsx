@@ -57,7 +57,15 @@ export default function TopBar() {
             </li>
           </ul>
         )}
-        <i className="searchItem fa-solid fa-magnifying-glass"></i>
+        <div className="searchBox">
+          <input
+            type="text"
+            placeholder="Type to search"
+            className="searchText"
+            autoFocus={true}
+          />
+          <i className="searchItem fa-solid fa-magnifying-glass"></i>
+        </div>
       </div>
     </div>
   );
