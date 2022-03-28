@@ -1,42 +1,49 @@
-.setting {
+.settings {
   display: flex;
 }
-.settingWrapper {
+
+.settingsWrapper {
   flex: 9;
   padding: 20px;
 }
-.settingTitle {
+
+.settingsTitle {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 
-.settingUpdateTitel {
+.settingsUpdateTitle {
   font-size: 30px;
-  color: rgb(207, 136, 148);
+  margin-bottom: 20px;
+  color: lightcoral;
 }
-.settingDeleteTitel {
-  font-size: 16px;
-  color: rgb(255, 0, 43);
+
+.settingsDeleteTitle {
+  color: red;
+  font-size: 12px;
   cursor: pointer;
 }
-.settingForm {
+
+.settingsForm {
   display: flex;
   flex-direction: column;
 }
-.settingPP {
+
+.settingsPP {
   display: flex;
   align-items: center;
   margin: 10px 0;
 }
-.settingPP > img {
+
+.settingsPP > img {
   width: 70px;
   height: 70px;
-  border-radius: 15px;
+  border-radius: 20px;
   object-fit: cover;
 }
-.settingPPIcon {
+
+.settingsPPIcon {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -48,33 +55,28 @@
   margin-left: 10px;
   cursor: pointer;
 }
-.settingForm > label {
+
+.settingsForm > label {
   font-size: 20px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
-.settingForm > input {
+.settingsForm > input {
   color: gray;
   margin: 10px 0;
   height: 30px;
   border: none;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid lightgray;
 }
-.settingSubmit {
+
+.settingsSubmit {
   width: 150px;
   align-self: center;
   border: none;
   border-radius: 10px;
-  background-color: teal;
   color: white;
-  font-size: 16px;
-  margin-top: 20px;
+  background-color: teal;
   padding: 10px;
+  margin-top: 20px;
   cursor: pointer;
-}
-.settingsPPInput {
-  width: 30%;
-}
-.settingSubmit:hover {
-  background-color: rgb(114, 1, 1);
 }

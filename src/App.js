@@ -5,7 +5,7 @@ import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
-import Setting from "./pages/setting/Setting";
+import Setting from "./pages/setting/Settings";
 import { useContext } from "react";
 import { Context } from "./context/Context";
 // import Example1 from "./Example/example1/Example1";
