@@ -1,0 +1,42 @@
+.boder-contact {
+  border: 1px solid rgb(90, 85, 85);
+  background-color: rgb(32, 41, 41);
+  margin-left: 150px;
+  margin-bottom: 20px;
+  margin-right: 150px;
+  margin-top: 5px;
+  height: 565px;
+}
+.contact {
+  margin-left: 190px;
+  margin-top: 60px;
+  color: aliceblue;
+}
+.title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 15px;
+  font-size: 48px;
+}
+.content {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 15px;
+}
+.contact-label {
+  margin-bottom: 15px;
+}
+.input-contact {
+  margin-top: 15px;
+  width: 600px;
+  height: 20px;
+}
+.input-message {
+  width: 600px;
+  height: 100px;
+}
+.btnSubmit {
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+}
