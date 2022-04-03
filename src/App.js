@@ -6,6 +6,8 @@ import Login from "./pages/login/Login";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import Setting from "./pages/setting/Settings";
+import Contact from "./pages/contact/Contact";
+
 import { useContext } from "react";
 import { Context } from "./context/Context";
 // import Example1 from "./Example/example1/Example1";
@@ -23,28 +25,29 @@ function App() {
   const { user } = useContext(Context);
 
   return (
-		<>
-			<TopBar />
+    <>
+      <TopBar />
 
-			{/* example3 */}
-			{/* <Example3 /> */}
+      {/* example3 */}
+      {/* <Example3 /> */}
 
-			<Routes>
-				<Route exact path='/' element={<HomePage />} />
-				<Route path='/register' element={user ? <HomePage /> : <Register />} />
-				<Route path='/login' element={user ? <HomePage /> : <Login />} />
-				<Route path='/write' element={user ? <Write /> : <Register />} />
-				<Route path='/setting' element={user ? <Setting /> : <Login />} />
-				<Route path='/post/:id' element={<Single />} />
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route path="/register" element={user ? <HomePage /> : <Register />} />
+        <Route path="/login" element={user ? <HomePage /> : <Login />} />
+        <Route path="/write" element={user ? <Write /> : <Register />} />
+        <Route path="/setting" element={user ? <Setting /> : <Login />} />
+        <Route path="/post/:id" element={<Single />} />
 
-				{/* <Route path="/register" element={<Register />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/post/:id" element={<Single />} />
         <Route path="/write" element={currentUser ? <Write /> : <Login />} />
         <Route path="/setting" element={<Setting />} /> */}
 
-				{/*start Example */}
-				{/* <Route path="/ex1" element={<Example1 />} />
+        {/*start Example */}
+        {/* <Route path="/ex1" element={<Example1 />} />
         <Route path="/ex2" element={<Example2 />} />
         <Route path="/ex31" element={<HomeEx3 />} />
         <Route path="/ex32" element={<ProductEx3 />} />
@@ -53,10 +56,10 @@ function App() {
         <Route path="/ex5" element={<Example5 />} />
         <Route path="/ex6" element={<Example6 />} />
         <Route path="/ex7" element={<Example7 />} /> */}
-				{/* end Example */}
-			</Routes>
-		</>
-	)
+        {/* end Example */}
+      </Routes>
+    </>
+  );
 }
 
 export default App;
