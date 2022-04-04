@@ -24,7 +24,8 @@ export default function Sidebar() {
           alt="Hình cute phô mai que"
         />
         <p>
-          React Native là một framework mã nguồn mở được sáng tạo bởi Facebook.
+          My name is Thu and I’m a Vietnamese. I am twenty-four years old. I
+          live in Ho Chi Minh city in the south of Vietnam.
         </p>
       </div>
       {/* categories */}

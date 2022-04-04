@@ -10,6 +10,7 @@ import Contact from "./pages/contact/Contact";
 
 import { useContext } from "react";
 import { Context } from "./context/Context";
+import About from "./pages/about/About";
 // import Example1 from "./Example/example1/Example1";
 // import Example2 from "./Example/example2/Example2";
 // import HomeEx3 from "./Example/example3/HomeEx3";
@@ -38,13 +39,8 @@ function App() {
         <Route path="/write" element={user ? <Write /> : <Register />} />
         <Route path="/setting" element={user ? <Setting /> : <Login />} />
         <Route path="/post/:id" element={<Single />} />
-
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/post/:id" element={<Single />} />
-        <Route path="/write" element={currentUser ? <Write /> : <Login />} />
-        <Route path="/setting" element={<Setting />} /> */}
 
         {/*start Example */}
         {/* <Route path="/ex1" element={<Example1 />} />
