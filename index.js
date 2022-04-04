@@ -45,6 +45,6 @@ app.use("/kapa", (req, res) => {
   console.log("chao cau nha");
 });
 
-app.listen(port, () => {
-  console.log(`Đang nghe cổng ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Đang nghe cổng ${port}`);
+// });
