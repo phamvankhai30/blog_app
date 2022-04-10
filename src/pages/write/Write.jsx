@@ -4,6 +4,7 @@ import { Context } from "../../context/Context";
 import "./write.css";
 export default function Write() {
   const [title, setTitle] = useState("");
+  const [cate, setCate] = useState("");
   const [desc, setDesc] = useState("");
   const [file, setFile] = useState(null);
   const { user } = useContext(Context);
@@ -13,6 +14,7 @@ export default function Write() {
     const newPost = {
       username: user.username,
       title,
+      cate,
       desc,
     };
     if (file) {
@@ -52,6 +54,15 @@ export default function Write() {
             className="writeInput"
             autoFocus={true}
             onChange={(e) => setTitle(e.target.value)}
+          />
+        </div>
+        <div className="writeFormGroup">
+          <input
+            style={{ fontSize: "18px", marginLeft: "35px" }}
+            type="text"
+            placeholder="Chủ đề"
+            className="writeInput"
+            onChange={(e) => setCate(e.target.value)}
           />
         </div>
         <div className="writeFormGroup">

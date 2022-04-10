@@ -1,14 +1,30 @@
+import { useContext } from "react";
+import { Context } from "../../context/Context";
 import "./about.css";
 export default function About() {
+  const { user } = useContext(Context);
+  const PF = "http://localhost:5000/images/";
+
   return (
     <div className="container">
-      <div className="postTitle">ABOUT</div>
+      <div className="postTitle1">ABOUT</div>
       <div className="pots-center">
-        <img
-          src="https://i.9mobi.vn/cf/Images/huy/2021/12/6/anh-gai-xinh-4.jpg"
-          alt=""
-          className="image"
-        />
+        {user ? (
+          <img
+            // src="https://i.9mobi.vn/cf/Images/huy/2021/12/6/anh-gai-xinh-4.jpg"
+            src={PF + user.profilePic}
+            alt=""
+            className="image"
+          />
+        ) : (
+          <img
+            src="https://i.9mobi.vn/cf/Images/huy/2021/12/6/anh-gai-xinh-4.jpg"
+            // src={PF + user.profilePic}
+            alt=""
+            className="image"
+          />
+        )}
+
         <p className="content">
           My name is Thu and I’m a Vietnamese. I am twenty-four years old. I
           live in Ho Chi Minh city in the south of Vietnam. I have a big family

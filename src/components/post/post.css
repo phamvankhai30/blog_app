@@ -1,14 +1,12 @@
 .post {
-  width: 360px;
-  padding: 0 10px;
-  margin-bottom: 40px;
+  width: 400px;
+  margin: 0px 25px 40px 25px;
   display: flex;
   flex-direction: column;
-  max-height: 500px;
 }
 
 .postImg {
-  width: 100%;
+  width: 385px;
   height: 280px;
   object-fit: cover;
   border-radius: 7px;
@@ -18,11 +16,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
-.postCats {
-  margin: 5px 0;
-}
+
 .postCat {
   font-family: "Varela Round", Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -38,7 +33,13 @@
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 900;
-  margin-top: 15px;
+  overflow: hidden;
+  height: 50px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  text-align: justify;
+  -webkit-box-orient: vertical;
   cursor: pointer;
 }
 

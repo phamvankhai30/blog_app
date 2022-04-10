@@ -4,6 +4,7 @@
   padding-bottom: 30px;
   background-color: #fdfdfd;
   border-radius: 10px;
+  height: 780px;
 }
 .sidebarItem {
   display: flex;

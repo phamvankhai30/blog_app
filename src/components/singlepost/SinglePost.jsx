@@ -3,6 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
+
 import "./singlepost.css";
 
 export default function SinglePost() {
@@ -86,6 +87,9 @@ export default function SinglePost() {
           <span className="singlePostDate">
             {new Date(post.createdAt).toDateString()}
           </span>
+          <span>
+            <i className="clsHeart fa-solid fa-heart"></i>
+          </span>
         </div>
         {updateMode ? (
           <textarea
@@ -96,6 +100,56 @@ export default function SinglePost() {
         ) : (
           <p className="singlePostDesc">{desc}</p>
         )}
+        {user ? (
+          <>
+            <div className="comment">
+              <span>
+                <img src={PF + user.profilePic} alt="" className="imgCmt" />
+              </span>
+              <span>
+                <input
+                  type="text"
+                  className="inputCmt"
+                  placeholder="Viết bình luận ..."
+                  onFocus={true}
+                />
+              </span>
+            </div>
+            <div className="cancel-ok">
+              <div>
+                <button className="btnCancel">HỦY</button>
+              </div>
+              <div>
+                <button className="btnComment">BÌNH LUẬN</button>
+              </div>
+            </div>
+          </>
+        ) : null}
+        <div className="userCmt">
+          <div>
+            <img
+              src="https://i.9mobi.vn/cf/Images/huy/2021/12/6/anh-gai-xinh-4.jpg"
+              alt=""
+              className="userImgCmt"
+            />
+          </div>
+          <div className="useCmtTime">
+            <p className="usercomment1">
+              Khai Pham <span style={{ marginLeft: "25px" }}>10/04/2022</span>
+            </p>
+            <p>Các bạn đã làm rất tốt. Hãy cố gắng thêm nhé !</p>
+          </div>
+        </div>
+        <div className="like-dislike">
+          <div>
+            <i class="fa-solid fa-thumbs-up"></i>
+          </div>
+          <div className="thubms">
+            <i class="fa-solid fa-thumbs-down"></i>
+          </div>
+          <div>PHẢN HỒI</div>
+        </div>
+
         {updateMode && (
           <button className="singlePostButton" onClick={handleUpdate}>
             Update

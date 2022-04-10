@@ -2,10 +2,13 @@
   width: 726px;
   margin: 0 auto;
 }
-.postTitle {
+.postTitle1 {
   text-align: center;
   margin-top: 100px;
   margin: 37px;
+  font-size: 50px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 .image {
   width: 300px;

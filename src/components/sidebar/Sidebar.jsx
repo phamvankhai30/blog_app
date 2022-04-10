@@ -43,9 +43,14 @@ export default function Sidebar() {
       <div className="sidebarItem">
         <span className="sidebarTitle">FOLLOW ME</span>
         <div className="sidebarSocial">
-          <i className="sidebarIcon fa-brands fa-twitter-square"></i>
+          <a
+            href="https://www.facebook.com/KhaiKaPa30/"
+            style={{ color: "inherit" }}
+          >
+            <i className="sidebarIcon fa-brands fa-facebook"></i>
+          </a>
           <i className="sidebarIcon fa-brands fa-pinterest"></i>
-          <i className="sidebarIcon fa-brands fa-facebook"></i>
+          <i className="sidebarIcon fa-brands fa-twitter-square"></i>
           <i className="sidebarIcon fa-brands fa-instagram-square"></i>
         </div>
       </div>
