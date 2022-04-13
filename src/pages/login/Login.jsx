@@ -45,6 +45,15 @@ export default function Login() {
         <button className="loginFromButton" type="submit" disabled={isFetching}>
           Login
         </button>
+        <p className="loginFbGg">Hoặc</p>
+        <button className="loginFB">
+          <i className="iconFb fa-brands fa-facebook"></i>
+          <p> Đăng nhập bằng Facebook</p>
+        </button>
+        <button className="loginFB">
+          <i className="iconFb fa-brands fa-google"></i>
+          <p> Đăng nhập bằng Google</p>
+        </button>
       </form>
       <button className="loginRegisterFrom">
         <Link to="/register" className="topBarLink">

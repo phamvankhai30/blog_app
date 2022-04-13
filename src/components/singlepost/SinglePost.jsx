@@ -89,6 +89,7 @@ export default function SinglePost() {
           </span>
           <span>
             <i className="clsHeart fa-solid fa-heart"></i>
+            <i className="clsShare fa-solid fa-share"></i>
           </span>
         </div>
         {updateMode ? (

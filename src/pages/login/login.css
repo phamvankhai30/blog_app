@@ -56,3 +56,19 @@
   padding: 10px;
   border-radius: 8px;
 }
+.loginFbGg {
+  text-align: center;
+  margin-top: 15px;
+}
+.loginFB {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.iconFb {
+  font-size: 20px;
+  margin-right: 10px;
+}

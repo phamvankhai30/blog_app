@@ -52,6 +52,15 @@ export default function Register() {
           Register
         </button>
         {error && <span className="error">Something went wrong!</span>}
+        <p className="registerFbGg">Hoặc</p>
+        <button className="registerFB">
+          <i className="iconFb fa-brands fa-facebook"></i>
+          <p> Đăng ký bằng Facebook</p>
+        </button>
+        <button className="registerFB">
+          <i className="iconFb fa-brands fa-google"></i>
+          <p> Đăng ký bằng Google</p>
+        </button>
       </form>
       <button className="registerLoginFrom">
         <Link to="/login" className="topBarLink">
